@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:include src="templates/head.xhtml"/>
+<h:body>
+    <ui:include src="templates/user-navbar.xhtml"/>
+    <main>
+        <hr class="my-2"/>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex flex-column">
+                    <h:graphicImage library="img" name="#{profileBean.profile.gender}.png" class="mx-auto img-thumbnail" width="200" height="200"/>
+                    <h4 class="mx-auto mt-3">#{profileBean.profile.username}</h4>
+                    <h5 class="mx-auto mt-3">#{profileBean.profile.gender}</h5>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3"/>
+    </main>
+    <ui:include src="templates/footer.xhtml"/>
+</h:body>
+</html>

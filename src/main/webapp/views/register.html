@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Casebook</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-casebook">
+            <a class="navbar-brand text-muted h4" href="/">Casebook</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav row">
+                    <li class="nav-item col-md-4">
+                        <a href="/" class="nav-link text-muted active h5">Home</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a href="/login" class="nav-link text-muted active h5">Login</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a href="/register" class="nav-link text-muted active h5">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-3">
+        <hr class="my-2"/>
+        <h1 class="text-center">Register</h1>
+        <hr class="hr-2"/>
+        <form class="mx-auto w-15" method="post" action="/login">
+            <div class="form-group">
+                <div class="label-holder d-flex justify-content-center">
+                    <label for="username" class="h3 mb-2">Username</label>
+                </div>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <div class="label-holder d-flex justify-content-center">
+                    <label for="password" class="h3 mb-2">Password</label>
+                </div>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <div class="label-holder d-flex justify-content-center">
+                    <label for="confirmPassword" class="h3 mb-2">Confirm Password</label>
+                </div>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div class="form-group">
+                <div class="label-holder d-flex justify-content-center">
+                    <label for="gender" class="h3 mb-2">Gender</label>
+                </div>
+                <input type="text" class="form-control" id="gender" name="gender">
+            </div>
+            <div class="button-holder d-flex justify-content-center">
+                <button type="submit" class="btn btn-info text-white">Register</button>
+            </div>
+        </form>
+        <hr class="my-3">
+    </main>
+    <footer class="footer py-3">
+        <div class="container-fluid">
+            <div class="text-muted container-fluid text-center">&copy; CopyRight Sanity Web Design Studios 2019. All
+                rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

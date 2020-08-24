@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Casebook</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-casebook">
+            <a class="navbar-brand text-muted h4" href="/">Casebook</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav row">
+                    <li class="nav-item col-md-4">
+                        <a href="/" class="nav-link text-muted active h5">Home</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a href="/friends" class="nav-link text-muted active h5">Friends</a>
+                    </li>
+                    <li class="nav-item col-md-4">
+                        <a href="/logout" class="nav-link text-muted active h5">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <hr class="my-2"/>
+        <div class="text-center mt-3">
+            <a href="/profile" class="h4 text-info">Welcome, $(username)</a>
+        </div>
+        <hr class="my-4">
+        <div class="container">
+            <div class="row mb-4 d-flex justify-content-around">
+                <div class="col-md-2 d-flex flex-column text-center">
+                    <img src="png/male.png" class="img-thumbnail" width="200" height="200">
+                    <h5 class="text-center">Pesho</h5>
+                    <a href="/friends/add?name=Pesho" class="btn btn-info">Add Friend</a>
+                </div>
+                <div class="col-md-2 d-flex flex-column text-center">
+                    <img src="png/female.png" class="img-thumbnail" width="200" height="200">
+                    <h5 class="text-center">Tuhlichka</h5>
+                    <a href="/friends/add?name=Tuhlichka" class="btn btn-info">Add Friend</a>
+                </div>
+                <div class="col-md-2 d-flex flex-column text-center">
+                    <img src="png/male.png" class="img-thumbnail" width="200" height="200">
+                    <h5 class="text-center">Sasho</h5>
+                    <a href="/friends/add?name=Sasho" class="btn btn-info">Add Friend</a>
+                </div>
+                <div class="col-md-2 d-flex flex-column text-center">
+                    <img src="png/female.png" class="img-thumbnail" width="200" height="200">
+                    <h5 class="text-center">Keremidka</h5>
+                    <a href="/friends/add?name=Keremidka" class="btn btn-info">Add Friend</a>
+                </div>
+            </div>
+            <div class="row mb-4 d-flex justify-content-around">
+                <div class="col-md-2 d-flex flex-column text-center">
+                    <img src="png/male.png" class="img-thumbnail" width="200" height="200">
+                    <h5 class="text-center">Toncho</h5>
+                    <a href="/friends/add?name=Toncho" class="btn btn-info">Add Friend</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3">
+    </main>
+    <footer class="footer py-3">
+        <div class="container-fluid">
+            <div class="text-muted container-fluid text-center">&copy; CopyRight Sanity Web Design Studios 2019. All
+                rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
